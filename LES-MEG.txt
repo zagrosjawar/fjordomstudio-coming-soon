@@ -1,0 +1,27 @@
+Fjordom Studio - "Kommer snart" page (v3)
+=========================================
+
+WHAT THIS IS
+One static page. No database, no WordPress, no cookies, no tracking, no external fonts.
+
+FILES
+  index.html              the page
+  robots.txt              lets search engines read the page
+  assets/                 font (Figtree), logo symbol, favicons, share image
+
+BEFORE YOU PUBLISH
+1. E-mail address: the page uses hei@fjordomstudio.no as a placeholder.
+   It appears 3 times in index.html. Either create that address on the web hotel,
+   or search and replace it with the address you want.
+2. Phone number: appears 2 times (search for "90406055" and "904 06 055").
+
+HOW TO UPLOAD
+1. Open the file manager (or FTP) for fjordomstudio.no on the web hotel.
+2. Go to the web root folder (usually called public_html or www).
+3. Upload index.html, robots.txt and the whole assets folder. Do not upload this LES-MEG.txt.
+4. Open https://fjordomstudio.no in a private browser window and check the page.
+
+YOUR OTHER DOMAINS
+Do not upload a copy of the page to each domain. Point them to the same web hotel
+and set a permanent redirect (301) to https://fjordomstudio.no in the control panel.
+One address for search engines, the others just forward.
