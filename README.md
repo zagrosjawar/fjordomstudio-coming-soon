@@ -24,14 +24,17 @@ Bytt den bare til en adresse som faktisk mottar e-post, og send en testmelding e
 
 ## Bakgrunnsbilde og video
 
-Bakgrunnen er nå en **midlertidig scene i ren CSS/SVG** (kveldshimmel, fjell, lys ved vannet, varm lampe).
-Den er laget for å holde sidens stemning til et ekte bilde eller en video med rettigheter er på plass.
+Bakgrunnen er det godkjente konseptbildet (arbeidsplass med utsikt mot Bryggen), renset for innbrent tekst, logo, knapper og bølger.
+All tekst og alle knapper på siden er ekte HTML oppå bildet. Filene er `assets/hero-poster.webp` (hovedfil) og `assets/hero-poster.jpg` (reserve for eldre nettlesere).
 
-Når et lisensiert eller eget bilde er klart:
+- Bildet er AI-generert. Det skal ikke presenteres som Fjordom Studios faktiske kontor eller ansatte.
+- Rensingen er gjort med retusjering. Der overskriften og «KOMMER SNART» står, er bakgrunnen litt utvisket. Det dekkes av teksten på store skjermer.
+- Bildet er 1672 px bredt. En ren versjon uten tekst, i høyere oppløsning, gir et skarpere resultat.
 
-1. Lagre det som `assets/hero-poster.webp` (ca. 1920 px bredt, under 300 KB).
-2. Bytt ut `<svg class="scene">…</svg>` i `index.html` med
-   `<img class="scene" src="assets/hero-poster.webp" alt="" width="1920" height="1080" />`.
+Slik bytter du bildet:
+
+1. Lagre det nye bildet som `assets/hero-poster.webp` og `assets/hero-poster.jpg` (ca. 1920 px bredt, under 300 KB).
+2. Oppdater `width` og `height` på `<img class="scene">` i `index.html` hvis størrelsen endres.
 3. Sjekk at overskriften fortsatt er lett å lese. Den mørke toningen (`.hero-shade`) ligger over bildet.
 
 Når en lisensiert video er klar:
