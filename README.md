@@ -24,15 +24,12 @@ Bytt den bare til en adresse som faktisk mottar e-post, og send en testmelding e
 
 ## Bakgrunnsbilde og video
 
-Bakgrunnen er nå en **midlertidig scene i ren CSS/SVG** (kveldshimmel, fjell, lys ved vannet, varm lampe).
-Den er laget for å holde sidens stemning til et ekte bilde eller en video med rettigheter er på plass.
+Bakgrunnen er et stillbilde laget med Figma AI etter det godkjente konseptet, uten tekst og uten logoer:
+`assets/hero-poster-960.webp`, `hero-poster-1536.webp` og `hero-poster-1536.jpg` (reserve).
+Bildet viser en tenkt arbeidsplass, ikke Fjordom Studios kontor, og skal ikke omtales som det.
+En mørk toning (`.hero-shade`) og en myk skygge bak overskriften holder teksten lesbar.
 
-Når et lisensiert eller eget bilde er klart:
-
-1. Lagre det som `assets/hero-poster.webp` (ca. 1920 px bredt, under 300 KB).
-2. Bytt ut `<svg class="scene">…</svg>` i `index.html` med
-   `<img class="scene" src="assets/hero-poster.webp" alt="" width="1920" height="1080" />`.
-3. Sjekk at overskriften fortsatt er lett å lese. Den mørke toningen (`.hero-shade`) ligger over bildet.
+Slik bytter du til et eget bilde: lagre det i samme størrelser og med samme filnavn, og sjekk at overskriften er lett å lese.
 
 Når en lisensiert video er klar:
 
