@@ -88,14 +88,15 @@ p, h1, ul { margin: 0; }
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: 42% 50%;   /* holder laptopen i bildet på smale skjermer */
 }
 /* Mørk vignett og toning som holder hvit tekst lesbar uansett bilde */
 .hero-shade {
 	position: absolute;
 	inset: 0;
 	background:
-		radial-gradient(ellipse 70% 55% at 50% 38%, rgba(6, 12, 24, 0.55), rgba(6, 12, 24, 0) 70%),
-		linear-gradient(180deg, rgba(6, 12, 24, 0.55) 0%, rgba(6, 12, 24, 0.15) 22%, rgba(6, 12, 24, 0.2) 60%, rgba(6, 12, 24, 0.75) 100%),
+		radial-gradient(ellipse 62% 30% at 50% 36%, rgba(6, 12, 24, 0.62), rgba(6, 12, 24, 0) 100%),
+		linear-gradient(180deg, rgba(6, 12, 24, 0.6) 0%, rgba(6, 12, 24, 0.2) 24%, rgba(6, 12, 24, 0.22) 58%, rgba(6, 12, 24, 0.8) 100%),
 		radial-gradient(ellipse 120% 90% at 50% 50%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.45) 100%);
 }
 
@@ -139,7 +140,7 @@ p, h1, ul { margin: 0; }
 	padding: 10px 20px;
 	border: 1.5px solid rgba(255, 255, 255, 0.85);
 	border-radius: 12px;
-	background: rgba(255, 255, 255, 0.06);
+	background: rgba(6, 12, 24, 0.45);
 	color: var(--color-white);
 	font-size: 1rem;
 	font-weight: 600;
@@ -147,8 +148,8 @@ p, h1, ul { margin: 0; }
 	text-decoration: none;
 	transition: background-color 0.15s ease, border-color 0.15s ease;
 }
-.contact:hover { background: rgba(255, 255, 255, 0.14); border-color: var(--color-white); }
-.contact:active { background: rgba(255, 255, 255, 0.22); }
+.contact:hover { background: rgba(6, 12, 24, 0.7); border-color: var(--color-white); }
+.contact:active { background: rgba(6, 12, 24, 0.85); }
 .contact-icon {
 	fill: none;
 	stroke: currentColor;
@@ -211,7 +212,7 @@ h1 {
 	line-height: 1.04;
 	letter-spacing: -0.02em;
 	text-wrap: balance;
-	text-shadow: 0 2px 24px rgba(4, 10, 22, 0.45);
+	text-shadow: 0 2px 24px rgba(4, 10, 22, 0.6), 0 0 3px rgba(4, 10, 22, 0.45);
 }
 h1 .dot { color: var(--accent-dot); }
 
